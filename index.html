@@ -7,6 +7,8 @@
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- Lightbox CSS -->
+      <link href="css/lightbox.min.css" rel="stylesheet">
       <!-- Our own custom CSS -->
       <link href="css/styles.css" rel="stylesheet">
 
@@ -26,7 +28,7 @@
           </button>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
               </li>
@@ -38,7 +40,7 @@
               </li>
             </ul>
             
-            <button class="btn btn-outline-info my-2 my-sm-0" type="button">Say Hello</button>
+            <!-- <button class="btn btn-outline-info my-2 my-sm-0" type="button">Say Hello</button> -->
           </div>
         </nav>
       </header>
@@ -51,7 +53,7 @@
             <h1 class="text-center display-4 mb-5">About</h1>
             <img class="img-thumbnail d-block mx-auto mb-4" src="images/avatar.svg" alt="Avatar" width="200" height="200">
 
-            <h2 class="text-center">Hi, I'm Jovy. Nice to meet you.</h1>
+            <h2 class="text-center">Hi, I'm Jovy. Nice to meet you.</h2>
             <p class="lead text-center">I'm an aspiring programmer who's studying to become a full-stack web developer. I'm currently working as an iOS app developer and would like to eventually transition to full-stack web development. I just finished a front-end web development course and below you could see the projects I made.</p>
           </div>
         </div>
@@ -66,84 +68,96 @@
             <!-- 1 card/row for xs and sm -->
             <!-- 2 card/row for md -->
             <!-- 3 card/row for lg and above -->
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project1.png" class="card-img-top" alt="Project 1 thumbnail">
+                <a href="images/project1.png" data-lightbox="gallery-set" data-title="Mobile-first responsive layout.">
+                  <img src="images/thumbnail/project1.png" class="card-img-top" alt="Project 1 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Mobile-first responsive layout</h5>
                   <p class="card-text">A portfolio page built using HTML and CSS with mobile-first approach. Succeeding projects are built with mobile-first approach in mind.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project2.png" class="card-img-top" alt="Project 2 thumbnail">
+                <a href="images/project2.png" data-lightbox="gallery-set" data-title="Online registration form.">
+                  <img src="images/thumbnail/project2.png" class="card-img-top" alt="Project 2 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Online registration form</h5>
                   <p class="card-text">Sample newsletter web form built using HTML and CSS.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project3.png" class="card-img-top" alt="Project 3 thumbnail">
+                <a href="images/project3.png" data-lightbox="gallery-set" data-title="Web style guide.">
+                  <img src="images/thumbnail/project3.png" class="card-img-top" alt="Project 3 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Web style guide</h5>
                   <p class="card-text">Converted a style guide that was initially styled with CSS to Sass.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project4.png" class="card-img-top" alt="Project 4 thumbnail">
+                <a href="images/project4.png" data-lightbox="gallery-set" data-title="Interactive photo gallery.">
+                  <img src="images/thumbnail/project4.png" class="card-img-top" alt="Project 4 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Interactive photo gallery</h5>
                   <p class="card-text">A searchable gallery of photos with lightbox functionality using JavaScript, jQuery, and lightbox plugin.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project5.png" class="card-img-top" alt="Project 5 thumbnail">
+                <a href="images/project5.png" data-lightbox="gallery-set" data-title="Game show app.">
+                  <img src="images/thumbnail/project5.png" class="card-img-top" alt="Project 5 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Game show app</h5>
-                  <p class="card-text">A "wheel of success" game built using JavaScript for the game logic.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <p class="card-text">A "wheel of success" web-based game built using JavaScript for the game logic.</p>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project6.png" class="card-img-top" alt="Project 6 thumbnail">
+                <a href="images/project6.png" data-lightbox="gallery-set" data-title="WebApp dashboard.">
+                  <img src="images/thumbnail/project6.png" class="card-img-top" alt="Project 6 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">WebApp dashboard</h5>
-                  <p class="card-text">A dashboard built using HTML, CSS/Sass, Flexbox, Grid, JavaScript, ChartJS, and jQuery.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <p class="card-text">A dashboard built using HTML, CSS/Sass (with Flexbox and Grid), JavaScript, Local storage, ChartJS, and jQuery.</p>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-5">
               <div class="card h-100 shadow">
-                <img src="images/project7.png" class="card-img-top" alt="Project 7 thumbnail">
+                <a href="images/project7.png" data-lightbox="gallery-set" data-title="Employee directory.">
+                  <img src="images/thumbnail/project7.png" class="card-img-top" alt="Project 7 thumbnail">
+                </a>
                 <div class="card-body d-md-flex flex-md-column">
                   <h5 class="card-title">Employee directory</h5>
                   <p class="card-text">A searchable employee directory page that gets employee data from an API. Fetch API was used to get data from the API.</p>
-                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">View site</a>
+                  <a href="#" target="_blank" class="btn btn-outline-primary mt-auto">Go to site</a>
                 </div>
               </div>
             </div>
-
-
 
           </div>
           
@@ -154,7 +168,7 @@
 
       <footer>
         <!-- contact -->
-        <div class="container-fluid bg-dark py-5">
+        <div id="contact" class="container-fluid bg-dark py-5">
 
           <div class="container">
             <h2 class="text-center mb-4 text-white">Contact</h2>
@@ -216,11 +230,13 @@
       
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <!-- momentJS for converting date time stuff -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment-with-locales.min.js" integrity="sha256-8d6kI5cQEwofkZmaPTRbKgyD70GN5mDpTYNP9YWhTlI=" crossorigin="anonymous"></script>
+      <!-- Lightbox JS -->
+      <script src="js/lightbox2-2.11.1/lightbox.min.js"></script>
       <!-- our own JS -->
       <script src="js/main.js"></script>
         
