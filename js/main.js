@@ -2,7 +2,10 @@
 /*              DOM variables                    */
 /* ============================================= */
 
-
+const $nameInput = $(`#name`);
+const $emailInput = $(`#email`);
+const $messageTextArea = $(`#message`);
+const $submitButton = $(`#submit`);
 
 /* ============================================= */
 /*              Variables                        */
@@ -40,7 +43,6 @@ const parseJSON = (jsonData) => {
 
 };
 
-
 /* ============================================= */
 /*              On page load                     */
 /* ============================================= */
@@ -53,3 +55,17 @@ $(document).ready( ()=> {
 /* ============================================= */
 /*              Event listeners                  */
 /* ============================================= */
+
+$submitButton.on(`click`, (event) => {
+    // prevent browser default
+    event.preventDefault();
+
+    // prevent user from submitting if fields are empty
+    const nameString = $nameInput.val();
+    const emailString = $emailInput.val();
+    const messageString = $messageTextArea.val();
+
+    if (nameString === `` || emailString === `` || messageString === ``) {
+        alert(`Please fill out required fields!`);
+    }
+});
